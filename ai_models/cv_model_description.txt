@@ -1,0 +1,30 @@
+Swarn Sanskriti Computer Vision Model Description
+-------------------------------------------------
+
+Purpose:
+- To enable Digital Museum features such as artifact visualization, image recognition, and classification.
+- To support AI-driven analysis of cultural artifacts, including object detection and image enhancement.
+
+Technologies & Libraries:
+- OpenCV for image processing and feature extraction.
+- TensorFlow or PyTorch for training deep learning models (e.g., CNNs) for artifact classification.
+- Pretrained models (e.g., ResNet, EfficientNet) fine-tuned on cultural heritage image datasets.
+- Node.js backend microservice to serve CV model predictions via REST API.
+
+Architecture:
+- Image preprocessing: resizing, normalization, augmentation.
+- Model: CNN-based classifier trained on labeled artifact images.
+- Postprocessing: confidence scoring and metadata extraction.
+- API: Endpoints for image upload and classification results.
+
+Example Pseudo-code:
+
+1. Receive image upload via API
+2. Preprocess image using OpenCV
+3. Pass image through CNN model for classification
+4. Return predicted artifact category and confidence score
+
+Notes:
+- Use data augmentation to improve model robustness.
+- Consider integrating with frontend for real-time artifact recognition.
+- Store model weights and metadata securely for scalability.
